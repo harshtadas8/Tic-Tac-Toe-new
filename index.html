@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="title">
+        <h1>Welcome to TicTacker.com</h1>
+        <h2>Play, Compete and Grow!</h2>
+      </div>
+      <div><img src="tic-tac-toe.png" alt="" /></div>
+    </header>
+
+    <main>
+      <!-- <div id="result">You Won!</div> -->
+      <div class="board">
+        <button class="but"></button>
+        <button class="but"></button>
+        <button class="but"></button>
+        <button class="but"></button>
+        <button class="but"></button>
+        <button class="but"></button>
+        <button class="but"></button>
+        <button class="but"></button>
+        <button class="but"></button>
+      </div>
+
+      <div class="turnscore" class="hide">
+        <div id="turn"><b>Player 1's Turn</b></div>
+
+        <div id="p1s"><b>0</b></div>
+        <div id="p2s"><b>0</b></div>
+      </div>
+
+      <div class="reset">
+        <button id="ressco"><b>Reset Scores</b></button>
+
+        <button id="rebtn"><b>Reset Game</b></button>
+      </div>
+    </main>
+    <div id="modal" class="hide">
+      <h1>Do you want to Reset the Game?</h1>
+      <button id="modres">Reset</button>
+      <button id="cancel">Cancel</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
